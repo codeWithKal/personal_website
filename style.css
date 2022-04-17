@@ -8,7 +8,7 @@
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9 , 30,0.7), rgba(4, 9 , 30,0.7)), url(images/pic_1622307666616.jpg);
-    background-position: center;
+    background-position: top;
     background-size: cover;
     position: relative; 
 }
@@ -122,6 +122,16 @@ nav .fa{
     .nav-links ul {
         padding: 30px;
     }
+    .language{
+        flex-direction: column;
+    }
+    .layer h1{
+        font-size: 15px;
+    }
+    .testimonials-column {
+       flex-direction: column;
+    }
+   
 
 }
 
@@ -162,11 +172,110 @@ li {
 .language .C {
     border: none;
     margin: 10px;
-    padding: 10px;
+    padding: 25px 10px;
     background-color: #fff3f3;
-    border-radius: 25px;
+    margin-bottom: 25px;
+    /* border-radius: 25px; */
+    transition: .5s;
     
 }
 .language p {
     color: #777;
 }
+.language .C:hover{
+   box-shadow: 0 0 40px 0px rgba(0, 0, 0, 1);
+}
+.profile {
+    text-align: center;
+    width: 80%;
+    padding-top: 25px;
+    margin: auto;
+}
+.image-column {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.image-column img {
+    width: 100%;
+    display: block;
+}
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+   top: 0;
+   left: 0;
+   transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer h1 {
+    width: 100%;
+    font-weight: 500%;
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.layer:hover h1 {
+    bottom: 49%;
+    opacity: 1;
+}
+.testimonials{
+    text-align: center;
+    /* margin-top: 10px; */
+    margin: auto;
+    width: 80%;
+    padding: 25px;
+    padding-top: 100px;
+}
+.testimonials-column {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    background: #fff3ff;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    border: red solid 4px;
+}
+.testimonials-column img {
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 40%;
+}
+.testimonials-column p{
+    padding-top: 30px;
+}
+.testimonials-column .abiy {
+    margin: 5px;
+    border: black 3px solid;
+    background-color: orange;
+}
+.testimonials-column .dangote {
+    margin: 5px;
+    border: black 3px solid;
+    background-color: orange;
+}
+.testimonials-column .alibaba {
+    margin: 5px;
+    border: black 3px solid;
+    background-color: orange;
+}
+
+
+
+
+
